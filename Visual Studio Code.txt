@@ -1,0 +1,9 @@
+Visual Studio Code git bash
+install the Angular Language Service plugin.
+
+https://code.visualstudio.com/docs
+If you want to set Git Bash as your default shell, open the 
+Terminal dropdown (next to the + icon) and select 
+Select Default Profile. 
+This will open a list of available shells, including Git Bash. 
+Selecting Git Bash will set it as your default shell, and all future terminals will be opened with Git Bash.
