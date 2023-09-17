@@ -1,0 +1,14 @@
+https://stackoverflow.com/questions/73005239/how-to-make-the-new-popup-window-appear-in-front-of-the-current-window
+I installed VSCodium 1.69.1 on Linux Mint 20.3 Cinnamon.
+When I click the
+*File, Open File*
+or any other menu,
+The new popup window will 
+appear behind the current window.
+How to make the new popup window appear in front of the current window?
+
+visual-studio-code
+
+
+
+I have updated VSCodium from 1.66.1 to 1.69.1 on Linux Mint 20.3 Cinnamon.

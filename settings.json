@@ -1,0 +1,14 @@
+{
+    "editor.fontSize": 24,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 1,
+    "editor.wordWrap": "on",
+    "files.exclude": {
+        "**/.angular": true,
+        "**/node_modules": true
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "git.enableSmartCommit": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}

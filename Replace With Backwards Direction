@@ -1,0 +1,36 @@
+Replace All With Backwards Direction
+https://stackoverflow.com/questions/tagged/visual-studio-code?tab=Newest
+https://stackoverflow.com/questions/72595499/replace-all-with-backwards-direction
+https://marketplace.visualstudio.com/items?itemName=ArturoDent.find-and-transform&ssr=false#overview
+
+How to Replace All With Backwards Direction?
+
+e.g.
+Text:
+
+```
+Reactive Patterns with RxJS.
+A practical guide.
+```
+
+Cursor is at the beginning of line 2.
+i.e. just before the character "A".
+Replace All " " With "_" Backwards Direction.
+
+Text becomes:
+
+```
+Reactive_Patterns_with_RxJS.
+A practical guide.
+```
+
+
+
+This is ok.
+Is there another way?
+e.g. 
+Notepad++ has a “Backwards direction” checkbox which can be checked.
+
+
+
+visual-studio-code

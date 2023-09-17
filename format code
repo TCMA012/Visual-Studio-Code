@@ -1,0 +1,6 @@
+format code
+On Windows Shift + Alt + F
+On Linux Ctrl + Shift + I
+
+through the 'Command Palette' provided in the editor with Ctrl +Shift+ P,
+and then searching for format document.

@@ -1,0 +1,112 @@
+Windows %APPDATA%\Code\User\settings.json
+Linux $HOME/.config/Code/User/settings.json
+
+cdm
+cd VSCode
+cp $HOME/.config/VSCodium/User/settings.json .
+
+
+
+To open the User settings:
+Open the command palette (either with F1 or Ctrl+Shift+P)
+Type "open settings"
+choose Open User Settings (JSON)
+
+
+
+https://betterprogramming.pub/my-7-recommended-settings-for-visual-studio-code-96fbd9f5e21a
+
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+
+files.autoSave
+onWindowChange
+
+git.inputValidationSubjectLength
+72
+50
+
+window.title: ${activeEditorLong}${separator}${rootName}
+"window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}",
+"window.title": "${activeEditorLong}${separator}${rootName}",
+
+window.zoomLevel
+0.8
+
+workbench.editor.enablePreview 
+false
+
+
+
+https://dev.to/bhagatparwinder/top-10-vs-code-settings-1bkm
+user settings using Ctrl+, on Windows
+"breadcrumbs.enabled": false
+"debug.toolBarLocation": "docked"
+
+"editor.cursorBlinking": "phase",
+"editor.cursorStyle": "line",
+"editor.fontLigatures": true, // Please don't hate me.
+"editor.formatOnSave": false,
+"editor.lineHeight": 22
+
+"files.autoSave": "onFocusChange",
+
+"html.format.enable": true,
+"html.format.endWithNewline": false,
+
+"javascript.format.enable": true,
+"javascript.format.insertSpaceAfterConstructor": true,
+"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+"javascript.updateImportsOnFileMove.enabled": "always",
+"typescript.updateImportsOnFileMove.enabled": "always",
+
+
+"workbench.editor.enablePreview": false,
+"workbench.editor.tabCloseButton": "right",
+"workbench.editor.tabSizing": "shrink",
+"workbench.panel.defaultLocation": "right",
+"workbench.settings.editor": "json",
+"workbench.sideBar.location": "right",
+
+
+VS Code Settings 
+https://gist.github.com/bhagatparwinder/13af4a593ff62a3c0796206c30436fdf
+
+https://gist.github.com/bhagatparwinder/8f4fade30c473e326426caebe7463f04
+
+
+
+?
+"explorer.autoReveal": true
+
+
+
+https://levelup.gitconnected.com/my-vscode-setup-helps-me-be-more-productive-401337512167
+Celestial theme
+One Dark Pro
+
+
+
+Fonts:
+JetBrains Mono
+
+Fira Code
+It’s a monospace font that includes programming ligatures, making it easier to distinguish between characters like “=” and “==”.
+
+install the font:
+https://github.com/tonsky/FiraCode/wiki/Installing
+
+Extensions:
+Code Runner
+Error Lens
+SonarLint
+Prettier
+GitHub Copilot
+GitLens
+Chat GPT
+Sourcery
+
+

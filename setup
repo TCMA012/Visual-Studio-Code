@@ -1,0 +1,60 @@
+https://medium.com/@quackquackquack/guide-setting-up-a-vscode-thats-so-good-that-you-work-overtime-just-so-you-can-keep-typing-11f85e58ee71
+
+https://github.com/oldtune/vscode_configs/
+
+vscode setting
+
+setup
+
+the ‘Dark Modern’ theme
+
+Command Palette
+Ctrl+Shift+P
+
+settings.json
+
+I have configured the minimap to appear only when I hover my cursor over the rightmost part of the editor.
+refactoring
+The minimap serves as a handy tool for quickly locating our position in the code. However, the excessive display of intricate characters could reduce the performance. I have opted to scale down the minimap to a value of 1.
+
+Enabling the automatic formatting feature in the editor can save you the hassle of manually formatting your code. 
+By configuring it to trigger on file save or when pasting text
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true,
+"editor.formatOnType": false,
+
+
+I prioritize performance over fancy UI, so I disabled smooth scrolling in VSCode. Smooth scrolling can sometimes introduce unnecessary overhead, affecting the overall performance.
+
+Additionally, I increased the fast scroll sensitivity, which allows me to navigate through the code faster when using the Alt key with the scroll wheel.
+
+Furthermore, I find sticky scrolling particularly useful, especially when working with long files. It helps me maintain a sense of location and easily track my position, similar to how breadcrumbs work in navigation.
+
+
+To eliminate the need for arrow keys, we can create custom key mappings in the keybindings.json file.
+  
+"editor.wordWrap": "on"
+
+Code Lens can be useful for quick action like Debug and Run Test while scrolling around.
+
+FiraCode is a monospaced font 
+
+
+
+
+"editor.fontFamily": "'FiraCode NF', 'firaCode Nerd Font', 'Cascadia Code', Consolas, 'Courier New', monospace",
+"editor.fontLigatures": true,
+
+"security.workspace.trust.banner": "never",
+"security.workspace.trust.emptyWindow": true,
+"security.workspace.trust.enabled": false,
+"security.workspace.trust.startupPrompt": "never",
+
+
+
+Extensions
+Diff lets you compare 2 text files
+
+Error Lens
+
+Markdown linting

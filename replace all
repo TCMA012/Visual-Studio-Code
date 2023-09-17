@@ -1,0 +1,38 @@
+replace all
+
+Am I missing an option, but it seems that when I select “replace all”, it no longer starts at the top of the file, but at where my cursor is, and I need to select “up” AND then “down” to make it happen for the whole file.
+And yet it works when I replace eg. seven spaces with one space, leaving my cursor at the bottom, then rerun it with two spaces replacing one it automatically starts at the top.
+Tks
+Dan
+0
+guy038
+guy038
+Feb 4, 2017, 12:41 PM
+
+Hi Dan,
+
+IMO, I suppose that the Wrap around option, in your Find/Replace dialog, must be unset.
+
+Just check that option and the replacements should occur from the caret’s location till the end of current file, THEN, from top of file till the caret’s location, if the Down direction is set and go the opposite direction if the Up direction is set !
+
+Personally, as I, very often, use the Regular expression search mode, and to avoid unpredictable results, I prefer to start, in all cases, at the very beginning of a file, leaving unchecked this Wrap around option
+
+This way to do may be useful if you intend to test a specific S/R on some text, located at the end of current file. Just place the caret at beginning of the text to test and click on Replace All button. It will NOT interfere with the part of current file, above that point :-))
+
+Best Regards,
+
+guy038
+0
+Scott Sumner
+Scott Sumner
+Feb 4, 2017, 2:09 PM
+
+Perhaps it is worth pointing out that the “Replace All” button is more accurately referred to as the “Replace All In Current Direction” button. In fact, I have customized the caption of my button to be “Repl. All in ‘Direction’” so that I don’t forget this fact! Of course, if the “Wrap around” option is enabled, it is truly a Replace All (with no qualifiers) operation.
+
+The “replace all” referred to on the “Replace All in All Opened Documents” button is also truly a replace-all operation (even for the current file WITHOUT Wrap-around being enabled!).
+1
+Dan Willink
+Dan Willink
+Feb 9, 2017, 2:11 PM
+
+Brilliant! The Wrap around option is in my humble opinion a confusing term. I always understood it to be take away the blanks to the LEFT and RIGHT of the expression, not to the TOP and BOTTOM. But, am willing to adapt ;)

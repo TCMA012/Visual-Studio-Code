@@ -1,0 +1,14 @@
+update VSCodium
+
+Update then install vscodium:
+
+sudo apt update
+sudo apt install codium
+
+sudo apt update && sudo apt install codium
+
+
+
+October 2022 (version 1.73)
+Update 1.73.1
+go to Updates on code.visualstudio.com

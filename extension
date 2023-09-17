@@ -1,0 +1,36 @@
+Angular extension
+Angular Language Service
+This extension provides a rich editing experience for Angular templates, both inline and external templates including:
+Completions lists
+AOT Diagnostic messages
+Quick info
+Go to definition
+
+
+
+Prettier
+Angular Snippets
+Angular Files
+Angular2-Switcher
+REST Client
+JSON to TS
+
+Code Spell Checker
+Path Intellisense
+GitLens
+Angular2-Inline
+TSLint
+Material Icon Theme
+
+
+
+
+extension Prettier
+Force align in vscode
+https://www.reddit.com/r/Angular2/comments/znfc5l/how_to_get_formatting_like_this_each_property_and/
+formatting like this? Each property and event binding should be below each other on a new line.
+https://getbem.com
+BEM — is a methodology that helps you to create reusable components and code sharing in front‑end development
+https://getbem.com/naming/
+Blocks, Elements and Modifiers
+Pro tip as well, you might want to through an index on your *ngfor https://www.angularjswiki.com/angular/how-to-get-index-of-element-in-ngfor-angular/

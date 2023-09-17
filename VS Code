@@ -1,0 +1,87 @@
+Visual Studio Code
+https://go.microsoft.com/fwlink/?LinkID=760868
+
+sudo dpkg -i <the downloaded file>.deb
+sudo dpkg -i code_1.68.1-1655263094_amd64.deb
+
+?
+VSCodium-linux-x64-1.68.1.tar.gz
+?
+
+VS Code
+https://www.youtube.com/c/Code
+https://www.youtube.com/channel/UCs5Y5_7XK8HLDX0SLNwkd3w
+
+File > Preferences > Settings
+Text Editor > Font 
+Font Size
+
+cat /usr/share/applications/code.desktop
+cat /usr/share/applications/codium.desktop
+
+sudo cp /usr/share/applications/codium.desktop /usr/share/applications/codium.desktop_orig
+
+sudo cp -f /usr/share/applications/codium.desktop_orig /usr/share/applications/codium.desktop
+
+codium ~/.bashrc
+
+=
+
+press "shift + cmd + o"  execute the action "Optimize imports". This will remove the unused ones. 
+And instead of clicking the little bulb for importing, you can press "cmd + ."
+
+?
+cp /usr/share/applications/codium.desktop /media/tcma/SeagateBackupPlusDrive/VSCode/
+
+
+#replace this line: Exec=/usr/share/code/code --unity-launch %F
+Exec=sommelier -X --scale=0.8 --dpi=160 /usr/share/code/code "--unity-launch %F"
+
+
+replace this line:
+Exec=/usr/share/codium/codium --unity-launch %F
+
+Exec=sommelier -X --scale=0.8 --dpi=160 /usr/share/codium/codium "--unity-launch %F"
+
+Exec=sommelier -X --scale=1.2 --dpi=160 /usr/share/codium/codium "--unity-launch %F"
+
+
+sudo cp -f /media/tcma/SeagateBackupPlusDrive/VSCode/codium.desktop /usr/share/applications/.
+?
+
+=
+
+Visual Studio Code does not offer convenient solution to change the UI font family.
+
+But a developer created the 
+Customize UI plugin for VS Code.
+
+Setup
+Install the Customize UI plugin
+Restart VS Code
+Open VS Code Settings
+Change Customize Linux Mint Update Manager Software SourcesUI Font:Monospace to Fira Code
+Change Customize UI Font:Regular to Helvetica Nueve or Arial depending on your OS
+Alternativaly, you can edit those settings using the json settings editor as follow:
+
+    "customizeUI.font.regular": "Helvetica Nueve",
+    "customizeUI.font.monospace": "Fira Code",
+
+=
+
+https://github.com/microsoft/vscode/pull/40764
+Thanks for this PR but we decided to not allow these kinds of modifications to our CSS directly. Rather, we think that our theming story should be evolved to allow more user configurations. See #26128, #26129 and #26130 for example.
+
+The two main issues with this approach here is:
+
+basically this makes all of our CSS class names API (in the same way all of our themable colors have become API). we do not want to commit ourselves to keeping the CSS class names stable. rather we should find those styles that we want to make themable and then explicitly announce them as API (same as we did and do for colors)
+the other issue is that bug reports we receive will be harder to understand if users run with custom CSS changes that we are not aware of. we think that we should be in control of which user styles can be changed and provide explicit support for instead of opening the door to any CSS changes that are possible with this approach
+
+?
+vscode is an electron app so you can actually just open up the developer tools in the help menu, look up the location of 
+workbench.desktop.main.css
+ under the source tab, make a backup and edit the font-family rule for your OS. There's a pretty gnarly-phrased notification that pops up about vscode being corrupted, however the linked-documentation is fairly clear it's just unsupported officially.
+
+VS Code workbench.desktop.main.css
+
+

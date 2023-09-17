@@ -1,0 +1,12 @@
+compare 2 files
+compare contents of two files
+
+Open both the files in VS Code.
+From the left Explorer panel, right-click the first file and choose 
+Select for Compare
+ from the right-click menu.
+Select a file to compare
+Then right-click the second file and choose 
+Compare with Selected.
+Select another file to compare
+Both the files will be opened in the main panel, side by side in inline view mode which is comfortable for comparing the differences.

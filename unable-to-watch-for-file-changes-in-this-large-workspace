@@ -1,0 +1,31 @@
+https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+The current limit can be viewed by running:
+
+cat /proc/sys/fs/inotify/max_user_watches
+The limit can be increased to its maximum by editing /etc/sysctl.conf (except on Arch Linux, read below) and adding this line to the end of the file:
+
+fs.inotify.max_user_watches=524288
+The new value can then be loaded in by running sudo sysctl -p.
+
+While 524,288 is the maximum number of files that can be watched, if you're in an environment that is particularly memory constrained, you may want to lower the number. Each file watch takes up 1080 bytes, so assuming that all 524,288 watches are consumed, that results in an upper bound of around 540 MiB.
+
+
+
+
+Another option is to exclude specific workspace directories from the VS Code file watcher with the files.watcherExclude setting. The default for files.watcherExclude excludes node_modules and some folders under .git, but you can add other directories that you don't want VS Code to track.
+
+"files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  }
+
+added these settings (actually, only below 2 lines) to .vscode/settings.json, file watcher warning STOPPED popping out.
+
+ 
+File > Preferences > Settings
+
+find  .vscode/settings.json
+
+find  settings.json
+
