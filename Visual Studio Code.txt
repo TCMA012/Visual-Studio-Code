@@ -7,3 +7,8 @@ Terminal dropdown (next to the + icon) and select
 Select Default Profile. 
 This will open a list of available shells, including Git Bash. 
 Selecting Git Bash will set it as your default shell, and all future terminals will be opened with Git Bash.
+
+
+
+VS Code shortcut for the source control icon:
+Ctrl+Shift+G
